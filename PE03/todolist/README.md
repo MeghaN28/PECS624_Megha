@@ -1,50 +1,11 @@
-# Welcome to your Expo app 👋
+# Input
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Through a text field the program allows users to input tasks that will be included in their to-do list. The parent component’s state stores and manages all typed input information which gets distributed to child components by props. Through the props inputValue and inputChange the Input component both handles user input dynamically and shows it on the screen.
 
-## Get started
+# Process
 
-1. Install dependencies
+The user can trigger the  submitTodo function to insert a new task into the todos array that resides in the component state. The application features two essential functions namely toggleComplete to modify task completion state along with deleteTodo to delete tasks. The parent component controls all state operations before passing the data through props to child elements which showcase React's one-way data flow logic.
 
-   ```bash
-   npm install
-   ```
+# Output
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+The list of tasks appears scrollable within the TodoList component. The user interface updates automatically when users mark their tasks complete or delete them from the list.
